@@ -7,12 +7,24 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.m"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+
+//足したメソッド
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    ViewController *viewController = viewController.new;
+    _window.rootViewController = viewController;
+    [self.window makeKeyAndVisible];
+    return YES;
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
